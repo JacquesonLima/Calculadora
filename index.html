@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="calculator">
+                <table>
+                    <tr>
+                        <td colspan="4">
+                            <input type="text" id="display" placeholder="0" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button class="calculator-buttons" id="clear-display" value="C">C</button></td>
+                        <td><button class="calculator-buttons" id="clear-historic" value="CE">CE</button></td>
+                        <td><button class="calculator-buttons" id="division" value="/">&divide;</button></td>
+                        <td><button class="calculator-buttons" id="multiplication" value="*">&times;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="calculator-buttons" id="num7" value="7">7</button></td>
+                        <td><button class="calculator-buttons" id="num8" value="8">8</button></td>
+                        <td><button class="calculator-buttons" id="num9" value="9">9</button></td>
+                        <td><button class="calculator-buttons" id="subtraction" value="-">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="calculator-buttons" id="num4" value="4">4</button></td>
+                        <td><button class="calculator-buttons" id="num5" value="5">5</button></td>
+                        <td><button class="calculator-buttons" id="num6" value="6">6</button></td>
+                        <td><button class="calculator-buttons" id="sum" value="+">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="calculator-buttons" id="num1" value="1">1</button></td>
+                        <td><button class="calculator-buttons" id="num2" value="2">2</button></td>
+                        <td><button class="calculator-buttons" id="num3" value="3">3</button></td>
+                        <td rowspan="2"><button class="calculator-buttons" id="result" value="=">=</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="calculator-buttons" id="num0" value="0">0</button></td>
+                        <td><button class="calculator-buttons" id="dot" value=".">.</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Criado por &copy; Jacqueson de Lima</p>
+    </footer>
+</body>
+</html>
