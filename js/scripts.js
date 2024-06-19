@@ -41,7 +41,7 @@ function calculate() {
                 display.value = 'Error';
                 break;
         }
-        operand1 = parseFloat(display.value);
+        operand1 = null;
         operand2 = null;
     }
 }
