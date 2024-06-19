@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scripts.js"></script>
 </head>
 <body>
     <main>
@@ -18,32 +17,32 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><button class="calculator-buttons" id="clear-display" value="C">C</button></td>
-                        <td><button class="calculator-buttons" id="clear-historic" value="CE">CE</button></td>
-                        <td><button class="calculator-buttons" id="division" value="/">&divide;</button></td>
-                        <td><button class="calculator-buttons" id="multiplication" value="*">&times;</button></td>
+                        <td><button class="calculator-buttons" id="clear-display" value="C" onclick="clearDisplay()">C</button></td>
+                        <td><button class="calculator-buttons" id="clear-historic" value="CE" onclick="clearAll()">CE</button></td>
+                        <td><button class="calculator-buttons" id="division" value="/" onclick="operation('/')">&divide;</button></td>
+                        <td><button class="calculator-buttons" id="multiplication" value="*" onclick="operation('*')">&times;</button></td>
                     </tr>
                     <tr>
-                        <td><button class="calculator-buttons" id="num7" value="7">7</button></td>
-                        <td><button class="calculator-buttons" id="num8" value="8">8</button></td>
-                        <td><button class="calculator-buttons" id="num9" value="9">9</button></td>
-                        <td><button class="calculator-buttons" id="subtraction" value="-">-</button></td>
+                        <td><button class="calculator-buttons" id="num7" value="7" onclick="writeOnDisplay('7')">7</button></td>
+                        <td><button class="calculator-buttons" id="num8" value="8" onclick="writeOnDisplay('8')">8</button></td>
+                        <td><button class="calculator-buttons" id="num9" value="9" onclick="writeOnDisplay('9')">9</button></td>
+                        <td><button class="calculator-buttons" id="subtraction" value="-" onclick="operation('-')">-</button></td>
                     </tr>
                     <tr>
-                        <td><button class="calculator-buttons" id="num4" value="4">4</button></td>
-                        <td><button class="calculator-buttons" id="num5" value="5">5</button></td>
-                        <td><button class="calculator-buttons" id="num6" value="6">6</button></td>
-                        <td><button class="calculator-buttons" id="sum" value="+">+</button></td>
+                        <td><button class="calculator-buttons" id="num4" value="4" onclick="writeOnDisplay('4')">4</button></td>
+                        <td><button class="calculator-buttons" id="num5" value="5" onclick="writeOnDisplay('5')">5</button></td>
+                        <td><button class="calculator-buttons" id="num6" value="6" onclick="writeOnDisplay('6')">6</button></td>
+                        <td><button class="calculator-buttons" id="sum" value="+" onclick="operation('+')">+</button></td>
                     </tr>
                     <tr>
-                        <td><button class="calculator-buttons" id="num1" value="1">1</button></td>
-                        <td><button class="calculator-buttons" id="num2" value="2">2</button></td>
-                        <td><button class="calculator-buttons" id="num3" value="3">3</button></td>
-                        <td rowspan="2"><button class="calculator-buttons" id="result" value="=">=</button></td>
+                        <td><button class="calculator-buttons" id="num1" value="1" onclick="writeOnDisplay('1')">1</button></td>
+                        <td><button class="calculator-buttons" id="num2" value="2" onclick="writeOnDisplay('2')">2</button></td>
+                        <td><button class="calculator-buttons" id="num3" value="3" onclick="writeOnDisplay('3')">3</button></td>
+                        <td rowspan="2"><button class="calculator-buttons" id="result" value="=" onclick="calculateResult()">=</button></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><button class="calculator-buttons" id="num0" value="0">0</button></td>
-                        <td><button class="calculator-buttons" id="dot" value=".">.</button></td>
+                        <td colspan="2"><button class="calculator-buttons" id="num0" value="0" onclick="writeOnDisplay('0')">0</button></td>
+                        <td><button class="calculator-buttons" id="dot" value="." onclick="writeOnDisplay('.')">.</button></td>
                     </tr>
                 </table>
             </div>
@@ -53,4 +52,5 @@
         <p>Criado por &copy; Jacqueson de Lima</p>
     </footer>
 </body>
+    <script src="js/scripts.js"></script>
 </html>
