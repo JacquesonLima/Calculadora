@@ -1,3 +1,6 @@
+operand1 = null;
+operand2 = null;
+operator = null;
 
 function writeOnDisplay(value) {
     display.value += value;
